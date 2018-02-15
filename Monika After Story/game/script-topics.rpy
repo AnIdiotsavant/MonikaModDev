@@ -4782,3 +4782,54 @@ label monika_asks_family:
                 m 1f "You can tell me about your family when you're ready, [player]." 
                 m 1j "I love you very much!"                              
     return
+
+init 5 python:
+    addEvent(Event(persistent.event_database,eventlabel="monika_dark_necessities",category=['misc'],prompt="Dark Necessities by RHCP",random=True))
+
+label monika_dark_necessities:
+    m 1a "[player], do you know the band {i}Red Hot Chili Peppers{/i}??"
+    menu:
+        "Yes.":
+            m 1b"Are you a fan?"
+            menu:
+                "I am.":
+                    m 1j "That's great!"
+                    m 1k "You've got good taste in music, [player]"
+                "Not really.":
+                    m 1l "Oh..." 
+                    m 2m "I thought you were a fan."
+                    m 3n "Since you said you knew them and all ahaha..."
+                    m 2e "But anyways..."
+        "No.":
+            m 1e "I can't really blame you for not knowing them. There are so many bands around the world."
+            m 1n "Not to mention I just found out about them myself."
+            m 1l "ahaha."
+            m 1b "The {i}Red Hot Chili Peppers{/i}, usually shortened to {i}RHCP{/i} is an American rock band from Los Angeles."
+            m 4d "They're known worldwide for their style of music that blends rock, funk, and punk."
+            m 4b "Their use of catchy wordplay that tackles a variety of subjects from jokes and storytelling to more serious subjects like addiction and their experiences"
+            m 3b "That combination makes music that's catchy, makes you wanna dance while still having depth to it all at the same time"
+            m 3k "They're so good, they even made it into the '{i}Rock and Roll Hall of Fame{/i}'back in 2012"
+            m 2j "Talk about famous, right?."
+            m 2l "Sorry [player]... I stared rambling on again ahaha."
+            m 1a "But anyway, back to the point."
+    m 2a "I was searching the internet for something to listen to and came across one of their songs."
+    m 4d "It was called '{i}Dark Necessities{/i}'."
+    m 3b "When I heard it, I was immediately hooked!"
+    m "The song was incredible to say the least. It honestly felt great to listen to."
+    m 1c "But the thing I liked about the song the most is it's message."
+    m 2c "It was about the inner demons and bad habits we all have in us, or the '{i}dark necessities{/i}' as they like to call them."
+    m 2q "And how those demons help us grow and see the beauty in them"
+    m 2r "And if you know the lead singer's background, the song becomes even more meaningful."
+    m 1f "When he was young, he was exposed to drugs and developed a habit at an early age."
+    m 4a "Now he's sober and enjoting life to the fullest."
+    m 1f "[player]..."
+    m 2g "If you're going having a hard time facing your inner demons. Always remember, you're not alone."
+    m 2f "Everyone has demons they're facing. Most of the time, your on the losing side and they take over"
+    m 2e "But I promise, once you accept they're a part of you, they become easier to manager."
+    m "And before you know it, you're already beating them."
+    m 1e "And if it becomes too much to handle. I want you to remember, I'm always here for you."
+    m 1a "I'll help you take on that burden you have and I'll never stop helping you overcome them."
+    m 4j "What girlfriend would I be if I couldn't help you with this much?"
+    m 1k "ahaha~"
+    return
+    
