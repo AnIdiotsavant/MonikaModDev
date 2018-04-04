@@ -5202,3 +5202,20 @@ label monika_dreaming:
     m 1a "But can you just imagine what it would be like to meet me in your dreams [player], any night that you wanted to?"
     m 1j "I hope that someday we can make your dreams about us a reality, my love."
     return
+
+init 5 python:
+    addEvent(Event(persistent.event_database,eventlabel="monika_piano_songs",category=['media'],prompt="do you know a lot of piano songs?",random=True))
+    
+label monika_piano_songs:
+    m "Do I know a lot of piano songs?"
+    m "I can't really say I know a lot."
+    m "But I do know my fair share."
+    m "From classics like Bach's *Fugue in G minor*, Beethoven's *Moonlight Sonata*, and Chopin's *Fantasie Improptu*."
+    m "To modern ones like Yimura's *River flown in you*."
+    m "And *Your Reality* by yours truly."
+    m "Ahaha~"
+    m "Even ones with singing like Elton John's *Imagine* and 
+    
+    
+    
+    
